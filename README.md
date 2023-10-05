@@ -1,2 +1,23 @@
-# key-skills-of-a-software-architect
-List of key skills of a software architect.
+# Klíčové znalosti softwarového architekta
+
+- 💚 Požadavky mají vždy přednost před Vaším životpisem - nesnažte se použít na projektu novou technologii, jen proto abyste si ji mohli dát do CV.
+- 💚 Zabraňte esenciální složitosti a odstraňte nahodilou složitost. Například některé frameworky jsou předimenzované a přináší sebou více složitosti než užitečnosti.
+- 💚 Váš největší problém není technického rázu - největším problémem jsou lidé, kteří na projektu pracují a budují ho. Je potřeba vybrat správné lidi a připravit jim správné prostředí pro práci.
+- 💚 Architektura aplikace určuje její výkon. Jak dobrá je architektura aplikace, tak vysoká je její performance. Performance je základ, všechno se točí kolen ní.
+- 💚 Neexistuje žádné univerzální řešení na všechno - každý projekt se vymýšlí od nuly a neexistuje řešení, které by šlo vždy zkopírovat 1:1.
+- 💚 Nikdy není dost brzo začít přemýšlet nad výkonem - začněte testovat výkon aplikace co nejdříve to jde, už během vývoje.
+- 💚 Byznys určuje směr - nemá smysl se snažit odporovat. Směr produktu/projektu určuje vždy byznys (zároveň ten kdo platí). Je potřeba to přijmout jako fakt.
+- 💚 Průběžně zkoušet CI/CD. Nenechávat proces CI/CD až nakonec ale budovat ho už od začátku vývoje produktu/aplikace.
+- 💚 Je to o kompromisech - každá architektura bude mít nějaké kompromisy (kvalita vs cena vs čas). Nikdy nebude 100% dokonalá.
+- 💚 V oblasti architektury není žádné “já” - nezkoušejte systém navrhnout sám, přemýšlejte nad věcmi ve více lidech. Chtějte slyšet názor běžných vývojářů a diskutujte nad řešeními.
+- 💚 Vyzkoušejte a pak vyberte - technologie a procesy. Když se zamýšlíte nad volbou technologií nebo procesů, nejdříve si je zkuste všechny a pak až vyberte co je nejlepší.
+- 💚 Dejte autonomii vývojářům - architekti mají ve zvyku kontrolovat implementaci jejich návrhu vývojáři, nedělejte to. Dejte dostatek autonomie vývojářům na jejich kreativitu a prosazení se.
+- 💚 Opakující činnosti zpomalují výkon - vyvarujte se jich. Jakmile odhalíte nějakou opakující se činnost ve vývoji → automatizujte ji.
+- 💚 Zaznamenávejte si svá rozhodnutí. Když učiníte nějaká rozhodnutí v návrhu systému, tak si zaznamenejte jejich odůvodnění. Například pro pozdější obhájení před byznysem.
+- 💚 Vyvarujte se “nemoci ze vzorů”. Existuje mnoho návrhových vzorů a plno architektů/vývojářů se snaží do aplikace dostat co nejvíce návrhových vzorů, protože myslejí, že to tak má být. Nedělejte to, dávejte přednost tomu, aby ten systém hlavně fungoval a nebyl složitý. Nemusí obsahovat seznam všech návrhových vzorů co existují, to vede ke složitosti systému.
+- 💚 Zaměřte se na podporu a provoz produktu/systému. Navrhujte mechanismy k monitoringu, odhalení chyb atd. pro ulehčení supportu a provozu.
+- 💚 Pokud jste přišli pouze na jedno řešení “problému”, obstarejte si druhý názor od kolegy. Žádný problém nemá jen jedno řešení, vždy jich existuje více a je potřeba je porovnat.
+- 💚 Pokud navrhujete systém a její architekturu, měli byste být také schopni to naprogramovat. Architekt by měl navrhovat to, co je i sám schopný naprogramovat a nevymýšlet složitosti, kterými přidělá problémy svým vývojářům.
+- 💚 Splácejte technický dluh. V každém projektu/produktu vzniká technický dluh, tomu nejde zabránit. Ale je potřeba ho kontinuálně odstraňovat a nenabalovat jen další.
+- 💚 Nebuďte omezený jen na jeden programovací jazyk/framework - pokud to je VHODNÉ, naučte se nový jazyk/framework a použijte ho.
+- 💚 Vaše řešení architektury nemůže zohledňovat budoucnost, nevidí do budoucnosti. Snažte se při návrhu softwaru primárně dbát na aktuální situaci a požadavky. Nikdy nedohlédnete do budoucna, nikdy nebudete vědět, jak se bude Váš projekt/produkt vyvíjet v budoucnu a nemůžete tomu přizpůsobit počáteční architekturu.
