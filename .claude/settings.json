@@ -1,3 +1,4 @@
 {
-  "_comment": "Zde můžete nakonfigurovat sdílená nastavení pro Claude Code."
+  "_comment": "Configure shared settings for Claude Code here.",
+  "_context": "The full project context is in PROJECT_CONTEXT.md."
 }

@@ -1,3 +1,4 @@
 {
-  "_comment": "Zde můžete nakonfigurovat projektová nastavení pro asistenta Gemini."
+  "_comment": "Configure project settings for the Gemini assistant here.",
+  "_context": "The full project context is in PROJECT_CONTEXT.md."
 }
