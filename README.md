@@ -1,23 +1,23 @@
-# Klíčové znalosti softwarového architekta
+# Key Knowledge of a Software Architect
 
-- 💚 Požadavky mají vždy přednost před Vaším životpisem - nesnažte se použít na projektu novou technologii, jen proto abyste si ji mohli dát do CV.
-- 💚 Zabraňte esenciální složitosti a odstraňte nahodilou složitost. Například některé frameworky jsou předimenzované a přináší sebou více složitosti než užitečnosti.
-- 💚 Váš největší problém není technického rázu - největším problémem jsou lidé, kteří na projektu pracují a budují ho. Je potřeba vybrat správné lidi a připravit jim správné prostředí pro práci.
-- 💚 Architektura aplikace určuje její výkon. Jak dobrá je architektura aplikace, tak vysoká je její performance. Performance je základ, všechno se točí kolen ní.
-- 💚 Neexistuje žádné univerzální řešení na všechno - každý projekt se vymýšlí od nuly a neexistuje řešení, které by šlo vždy zkopírovat 1:1.
-- 💚 Nikdy není dost brzo začít přemýšlet nad výkonem - začněte testovat výkon aplikace co nejdříve to jde, už během vývoje.
-- 💚 Byznys určuje směr - nemá smysl se snažit odporovat. Směr produktu/projektu určuje vždy byznys (zároveň ten kdo platí). Je potřeba to přijmout jako fakt.
-- 💚 Průběžně zkoušet CI/CD. Nenechávat proces CI/CD až nakonec ale budovat ho už od začátku vývoje produktu/aplikace.
-- 💚 Je to o kompromisech - každá architektura bude mít nějaké kompromisy (kvalita vs cena vs čas). Nikdy nebude 100% dokonalá.
-- 💚 V oblasti architektury není žádné “já” - nezkoušejte systém navrhnout sám, přemýšlejte nad věcmi ve více lidech. Chtějte slyšet názor běžných vývojářů a diskutujte nad řešeními.
-- 💚 Vyzkoušejte a pak vyberte - technologie a procesy. Když se zamýšlíte nad volbou technologií nebo procesů, nejdříve si je zkuste všechny a pak až vyberte co je nejlepší.
-- 💚 Dejte autonomii vývojářům - architekti mají ve zvyku kontrolovat implementaci jejich návrhu vývojáři, nedělejte to. Dejte dostatek autonomie vývojářům na jejich kreativitu a prosazení se.
-- 💚 Opakující činnosti zpomalují výkon - vyvarujte se jich. Jakmile odhalíte nějakou opakující se činnost ve vývoji → automatizujte ji.
-- 💚 Zaznamenávejte si svá rozhodnutí. Když učiníte nějaká rozhodnutí v návrhu systému, tak si zaznamenejte jejich odůvodnění. Například pro pozdější obhájení před byznysem.
-- 💚 Vyvarujte se “nemoci ze vzorů”. Existuje mnoho návrhových vzorů a plno architektů/vývojářů se snaží do aplikace dostat co nejvíce návrhových vzorů, protože myslejí, že to tak má být. Nedělejte to, dávejte přednost tomu, aby ten systém hlavně fungoval a nebyl složitý. Nemusí obsahovat seznam všech návrhových vzorů co existují, to vede ke složitosti systému.
-- 💚 Zaměřte se na podporu a provoz produktu/systému. Navrhujte mechanismy k monitoringu, odhalení chyb atd. pro ulehčení supportu a provozu.
-- 💚 Pokud jste přišli pouze na jedno řešení “problému”, obstarejte si druhý názor od kolegy. Žádný problém nemá jen jedno řešení, vždy jich existuje více a je potřeba je porovnat.
-- 💚 Pokud navrhujete systém a její architekturu, měli byste být také schopni to naprogramovat. Architekt by měl navrhovat to, co je i sám schopný naprogramovat a nevymýšlet složitosti, kterými přidělá problémy svým vývojářům.
-- 💚 Splácejte technický dluh. V každém projektu/produktu vzniká technický dluh, tomu nejde zabránit. Ale je potřeba ho kontinuálně odstraňovat a nenabalovat jen další.
-- 💚 Nebuďte omezený jen na jeden programovací jazyk/framework - pokud to je VHODNÉ, naučte se nový jazyk/framework a použijte ho.
-- 💚 Vaše řešení architektury nemůže zohledňovat budoucnost, nevidí do budoucnosti. Snažte se při návrhu softwaru primárně dbát na aktuální situaci a požadavky. Nikdy nedohlédnete do budoucna, nikdy nebudete vědět, jak se bude Váš projekt/produkt vyvíjet v budoucnu a nemůžete tomu přizpůsobit počáteční architekturu.
+- 💚 Requirements always take precedence over your resume - don't use a new technology on a project just so you can add it to your CV.
+- 💚 Prevent essential complexity and eliminate accidental complexity. For example, some frameworks are overengineered and bring more complexity than usefulness.
+- 💚 Your biggest problem is not technical - the biggest problem is the people who work on and build the project. You need to pick the right people and prepare the right environment for them to work in.
+- 💚 Application architecture determines its performance. As good as the application's architecture is, that's how high its performance is. Performance is foundational - everything revolves around it.
+- 💚 There is no universal solution for everything - every project is designed from scratch and there is no solution that can always be copied 1:1.
+- 💚 It's never too early to start thinking about performance - start testing the application's performance as early as possible, already during development.
+- 💚 Business dictates the direction - there's no point fighting it. The direction of the product/project is always determined by the business (and whoever pays). This needs to be accepted as a fact.
+- 💚 Continuously test CI/CD. Don't leave the CI/CD process until the end, but build it from the very start of product/application development.
+- 💚 It's all about trade-offs - every architecture will have some trade-offs (quality vs cost vs time). It will never be 100% perfect.
+- 💚 There is no "I" in architecture - don't try to design the system alone, think things through with multiple people. Seek out the opinion of regular developers and discuss solutions.
+- 💚 Try and then choose - technologies and processes. When deciding on technologies or processes, try them all out first and then pick what's best.
+- 💚 Give developers autonomy - architects tend to check how developers implement their design, don't do that. Give developers enough autonomy for their creativity and self-expression.
+- 💚 Repetitive tasks slow you down - avoid them. As soon as you spot a repetitive task in development, automate it.
+- 💚 Record your decisions. When you make decisions in system design, record their rationale. For example, to defend them later to the business.
+- 💚 Avoid "patternitis". There are many design patterns and plenty of architects/developers try to cram as many into an application as possible, thinking that's how it should be. Don't do this - prioritize the system actually working and not being complex. It doesn't need to contain a list of every design pattern that exists; that leads to system complexity.
+- 💚 Focus on supporting and operating the product/system. Design mechanisms for monitoring, error detection, etc. to ease support and operations.
+- 💚 If you've only come up with one solution to a "problem", get a second opinion from a colleague. No problem has just one solution - there are always more and they need to be compared.
+- 💚 If you're designing a system and its architecture, you should also be able to program it. An architect should design what they themselves can implement and not invent complexities that cause problems for their developers.
+- 💚 Pay off technical debt. Technical debt accrues in every project/product - it can't be prevented. But it needs to be continuously paid down, not just piling more on top.
+- 💚 Don't limit yourself to a single programming language/framework - when it's APPROPRIATE, learn a new language/framework and use it.
+- 💚 Your architecture solution can't account for the future - it can't see ahead. When designing software, primarily focus on the current situation and requirements. You'll never be able to look into the future, you'll never know how your project/product will evolve, and you can't tailor the initial architecture to it.
