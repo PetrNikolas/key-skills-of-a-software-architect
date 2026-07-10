@@ -21,3 +21,11 @@
 - 💚 Pay off technical debt. Technical debt accrues in every project/product - it can't be prevented. But it needs to be continuously paid down, not just piling more on top.
 - 💚 Don't limit yourself to a single programming language/framework - when it's APPROPRIATE, learn a new language/framework and use it.
 - 💚 Your architecture solution can't account for the future - it can't see ahead. When designing software, primarily focus on the current situation and requirements. You'll never be able to look into the future, you'll never know how your project/product will evolve, and you can't tailor the initial architecture to it.
+- 💚 Security is not something you add at the end - design it in from the start. Bolting it on later is expensive and never complete.
+- 💚 Blame the system, not the person - run blameless postmortems. When something fails, learn what the process allowed to go wrong instead of looking for someone to punish.
+- 💚 The code and the business must speak the same language - build a ubiquitous language with domain experts and mirror it in the code, so the design maps to the real problem rather than a technical abstraction.
+- 💚 An API is a promise - treat backward compatibility as a commitment. Once published, an API is no longer fully yours, so version carefully and document breaking changes.
+- 💚 Documentation that lives apart from the code rots - treat docs as code, versioned, reviewed, and sitting next to what they describe.
+- 💚 Prefer boring, proven technology on the critical path. New is exciting but mature is reliable - choose stability where the cost of failure is high.
+- 💚 Favor reversible decisions and keep your options open - don't commit to a one-way door when a two-way door is still available.
+- 💚 Build what differentiates you, buy what doesn't - don't reinvent commodity solutions when a proven one lets you focus on your core value.

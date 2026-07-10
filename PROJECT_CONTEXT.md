@@ -8,7 +8,7 @@ The repository holds a **curated flat list of key skills and principles for soft
 
 ## Contents
 
-All content lives in a single file, `README.md`, under the heading `# Key Knowledge of a Software Architect`. It currently contains **21 entries**, each in the format:
+All content lives in a single file, `README.md`, under the heading `# Key Knowledge of a Software Architect`. It currently contains **29 entries**, each in the format:
 
 ```
 - 💚 <principle/maxim> - <short explanation>.
@@ -20,7 +20,7 @@ Entries are in insertion order, not sorted alphabetically or by theme. There are
 
 ```
 .
-├── README.md              # Main content — flat list of 21 principles
+├── README.md              # Main content — flat list of 29 principles
 ├── AGENTS.md              # Instructions for general AI agents
 ├── CLAUDE.md              # Instructions for Claude
 ├── GEMINI.md              # Instructions for Gemini
