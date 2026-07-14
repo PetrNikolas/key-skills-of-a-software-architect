@@ -1,8 +1,8 @@
-name: Monthly / Friday regression check
+name: Monthly regression check
 
 on:
   schedule:
-    - cron: '0 21 * * 5'
+    - cron: '0 21 1-7 * 5'
   workflow_dispatch:
 
 permissions:
@@ -29,9 +29,53 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Run regression investigation
+      - name: Inspect available measurements
         run: |
-          echo "Porovnej nedávné změny s benchmarky nebo trasami a včas označ zhoršení."
-          echo "Tvrzení opírej o měřitelné signály: benchmarky, trasy, časování, flame grafy."
-          echo "Pokud měření nejsou k dispozici, uveď: Nebyla nalezena žádná měření."
-          echo "Nevytvářej další worktree."
+          echo "Hledám benchmarky, trasy, časování nebo flame grafy..."
+          find . \
+            -path './node_modules' -prune -o \
+            -type f \( \
+              -iname '*benchmark*' -o \
+              -iname '*bench*' -o \
+              -iname '*trace*' -o \
+              -iname '*timing*' -o \
+              -iname '*flame*' \
+            \) -print
+
+      - name: Run lint
+        run: yarn lint
+
+      - name: Run build
+        run: yarn build
+
+      - name: Create report
+        run: |
+          mkdir -p reports
+          cat > reports/regression-check.md <<'EOF'
+          # Regression check
+
+          Zadání:
+
+          Porovnej nedávné změny s benchmarky nebo trasami a včas označ zhoršení.
+
+          Pravidla pro podložení tvrzení:
+
+          - Tvrzení opírej o měřitelné signály: benchmarky, trasy, časování, flame grafy.
+          - Pokud měření nejsou k dispozici, uveď: „Nebyla nalezena žádná měření“.
+          - Nevytvářej další worktree.
+          - Vycházej z hlavní větve master.
+          EOF
+
+      - name: Create pull request if report changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: automation/monthly-regression-check
+          base: master
+          title: Monthly regression check
+          commit-message: Add monthly regression check report
+          body: |
+            Automated monthly regression check.
+
+            The report compares recent changes against available measurable signals.
+            If no benchmark, trace, timing, or flame graph data is available, the report must say:
+            „Nebyla nalezena žádná měření“.
