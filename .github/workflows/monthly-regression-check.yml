@@ -1,0 +1,37 @@
+name: Monthly / Friday regression check
+
+on:
+  schedule:
+    - cron: '0 21 * * 5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  regression-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Use Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Run regression investigation
+        run: |
+          echo "Porovnej nedávné změny s benchmarky nebo trasami a včas označ zhoršení."
+          echo "Tvrzení opírej o měřitelné signály: benchmarky, trasy, časování, flame grafy."
+          echo "Pokud měření nejsou k dispozici, uveď: Nebyla nalezena žádná měření."
+          echo "Nevytvářej další worktree."
