@@ -28,4 +28,14 @@
 - 💚 Documentation that lives apart from the code rots - treat docs as code, versioned, reviewed, and sitting next to what they describe.
 - 💚 Prefer boring, proven technology on the critical path. New is exciting but mature is reliable - choose stability where the cost of failure is high.
 - 💚 Favor reversible decisions and keep your options open - don't commit to a one-way door when a two-way door is still available.
+- 💚 Put boundaries around change - group things that change for the same reasons and separate things that change for different reasons, so evolution stays local instead of rippling across the system.
+- 💚 Make quality attributes measurable - performance, reliability, scalability, security, and availability need explicit targets and automated checks, not vague adjectives.
+- 💚 Design for failure, not only for the happy path - every dependency can become slow, unavailable, or inconsistent, so define timeouts, recovery, degradation, and failure handling deliberately.
+- 💚 Distributed systems have a tax - don't cross a network boundary unless independent scaling, deployment, resilience, or ownership benefits clearly justify the added operational complexity.
+- 💚 Data outlives applications - treat data ownership, lifecycle, migration, retention, compatibility, and deletion as first-class architectural decisions.
+- 💚 Keep state explicit and intentional - hidden or shared mutable state creates coupling, makes failures harder to isolate, and makes systems harder to reason about.
+- 💚 Team boundaries shape system boundaries - align ownership and architecture so teams can make changes independently without constant cross-team coordination.
+- 💚 Architecture is a hypothesis until running software validates it - use tests, production telemetry, incidents, and user feedback to continuously challenge architectural assumptions.
+- 💚 Make the easy path the right path - provide sensible defaults, paved roads, automation, and guardrails so teams naturally follow good architectural practices without constant policing.
+- 💚 Treat cost as an architectural quality attribute - understand the unit economics of important workloads and design systems whose operating cost scales intentionally with business value.
 - 💚 Build what differentiates you, buy what doesn't - don't reinvent commodity solutions when a proven one lets you focus on your core value.
