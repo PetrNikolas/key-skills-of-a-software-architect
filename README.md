@@ -39,3 +39,6 @@
 - 💚 Prefer boring, proven technology on the critical path. New is exciting but mature is reliable - choose stability where the cost of failure is high.
 - 💚 Favor reversible decisions and keep your options open - don't commit to a one-way door when a two-way door is still available.
 - 💚 Build what differentiates you, buy what doesn't - don't reinvent commodity solutions when a proven one lets you focus on your core value.
+- 💚 Make retries safe through idempotency - repeated delivery and ambiguous network failures are normal in distributed systems, so ensure retrying an operation cannot duplicate business effects.
+- 💚 Protect the system under overload - use bounded queues, backpressure, admission control, and graceful load shedding so excess demand degrades service instead of causing cascading failure.
+- 💚 Limit the blast radius of failure - isolate resources, tenants, and failure domains so one faulty dependency, deployment, or workload cannot take down the whole system.
