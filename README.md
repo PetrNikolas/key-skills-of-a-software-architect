@@ -42,3 +42,5 @@
 - 💚 Make retries safe through idempotency - repeated delivery and ambiguous network failures are normal in distributed systems, so ensure retrying an operation cannot duplicate business effects.
 - 💚 Protect the system under overload - use bounded queues, backpressure, admission control, and graceful load shedding so excess demand degrades service instead of causing cascading failure.
 - 💚 Limit the blast radius of failure - isolate resources, tenants, and failure domains so one faulty dependency, deployment, or workload cannot take down the whole system.
+- 💚 Minimize coordination across service boundaries - prefer asynchronous communication and eventual consistency where strong consistency is not required, so independent evolution and scale remain possible.
+- 💚 Make observability a first-class design constraint - instrument metrics, logs, and traces so the system can explain its own behavior and support diagnosis without privileged access or code changes.
