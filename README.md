@@ -45,3 +45,4 @@
 - 💚 Minimize coordination across service boundaries - prefer asynchronous communication and eventual consistency where strong consistency is not required, so independent evolution and scale remain possible.
 - 💚 Make observability a first-class design constraint - instrument metrics, logs, and traces so the system can explain its own behavior and support diagnosis without privileged access or code changes.
 - 💚 Grant the minimum necessary privilege - make access explicit and limit each user, service, and component to only the resources and actions it needs, reducing the impact of mistakes and compromise.
+- 💚 Make software supply-chain integrity verifiable - record the source, build inputs, and provenance of important artifacts so consumers can verify what was built and detect unauthorized changes.
