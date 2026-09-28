@@ -46,3 +46,4 @@
 - 💚 Make observability a first-class design constraint - instrument metrics, logs, and traces so the system can explain its own behavior and support diagnosis without privileged access or code changes.
 - 💚 Grant the minimum necessary privilege - make access explicit and limit each user, service, and component to only the resources and actions it needs, reducing the impact of mistakes and compromise.
 - 💚 Make software supply-chain integrity verifiable - record the source, build inputs, and provenance of important artifacts so consumers can verify what was built and detect unauthorized changes.
+- 💚 Keep the test suite fast and trustworthy - flaky or slow tests destroy the feedback loop and once engineers stop trusting results they ignore real failures, so treat test suite health as an architectural concern and fix or quarantine unstable tests immediately.
