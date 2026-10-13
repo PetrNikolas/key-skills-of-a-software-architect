@@ -8,7 +8,7 @@ The repository holds a **curated flat list of key skills and principles for soft
 
 ## Contents
 
-All content lives in a single file, `README.md`, under the heading `# Key Knowledge of a Software Architect`. It currently contains **29 entries**, each in the format:
+All architecture principles live in a single file, `README.md`, under the heading `# Key Knowledge of a Software Architect`. Each entry uses this format:
 
 ```
 - 💚 <principle/maxim> - <short explanation>.
@@ -20,17 +20,12 @@ Entries are in insertion order, not sorted alphabetically or by theme. There are
 
 ```
 .
-├── README.md              # Main content — flat list of 29 principles
-├── AGENTS.md              # Instructions for general AI agents
-├── CLAUDE.md              # Instructions for Claude
-├── GEMINI.md              # Instructions for Gemini
-├── PROJECT_CONTEXT.md     # This file — full project context
-├── LICENSE                # MIT License, © 2023 Petr Nikolas Prokop
-├── .gitignore             # IntelliJ template (.idea, *.iml, out, gen)
-├── .claude/settings.json  # Configuration for Claude Code (placeholder)
-├── .codex/config.toml     # Configuration for Codex CLI (placeholder)
-├── .gemini/settings.json  # Configuration for Gemini (placeholder)
-└── .idea/                 # IntelliJ project files (gitignored)
+├── README.md          # Main content — flat list of architecture principles
+├── PROJECT_CONTEXT.md # Project purpose and contribution conventions
+├── LICENSE            # MIT License, © 2023 Petr Nikolas Prokop
+├── .gitignore         # IntelliJ-related ignore rules
+└── .github/
+    └── FUNDING.yml    # Funding links
 ```
 
 ## Contribution conventions
@@ -68,11 +63,10 @@ Before appending a new principle to `README.md`, verify the draft against this c
 
 ## Git context
 
-- **Main branch:** `main`
-- **Local branches:** `main`, `feature/dhaka`
-- **Workflow:** direct commits to `main` or via feature branches.
+- **Default branch:** `main`
+- **Contribution workflow:** use a feature branch and submit a pull request; do not push directly to the default branch.
 
 ## References
 
 - [`README.md`](README.md) — main content.
-- [`AGENTS.md`](AGENTS.md) / [`CLAUDE.md`](CLAUDE.md) / [`GEMINI.md`](GEMINI.md) — instructions for individual AI tools.
+- [`PROJECT_CONTEXT.md`](PROJECT_CONTEXT.md) — project context and contribution conventions.
