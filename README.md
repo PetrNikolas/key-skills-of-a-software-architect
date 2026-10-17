@@ -11,7 +11,7 @@
 - 💚 Make the easy path the right path - provide sensible defaults, paved roads, automation, and guardrails so teams naturally follow good architectural practices without constant policing.
 - 💚 Treat cost as an architectural quality attribute - understand the unit economics of important workloads and design systems whose operating cost scales intentionally with business value.
 - 💚 Requirements always take precedence over your resume - don't use a new technology on a project just so you can add it to your CV.
-- 💚 Prevent essential complexity and eliminate accidental complexity. For example, some frameworks are overengineered and bring more complexity than usefulness.
+- 💚 Manage essential complexity and minimize accidental complexity - Essential complexity comes from the problem itself; accidental complexity comes from avoidable design and implementation choices.
 - 💚 Your biggest problem is not technical - the biggest problem is the people who work on and build the project. You need to pick the right people and prepare the right environment for them to work in.
 - 💚 Application architecture determines its performance. As good as the application's architecture is, that's how high its performance is. Performance is foundational - everything revolves around it.
 - 💚 There is no universal solution for everything - every project is designed from scratch and there is no solution that can always be copied 1:1.
