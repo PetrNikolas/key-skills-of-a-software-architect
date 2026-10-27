@@ -20,7 +20,7 @@
 - 💚 Continuously test CI/CD. Don't leave the CI/CD process until the end, but build it from the very start of product/application development.
 - 💚 It's all about trade-offs - every architecture will have some trade-offs (quality vs cost vs time). It will never be 100% perfect.
 - 💚 There is no "I" in architecture - don't try to design the system alone, think things through with multiple people. Seek out the opinion of regular developers and discuss solutions.
-- 💚 Try and then choose - technologies and processes. When deciding on technologies or processes, try them all out first and then pick what's best.
+- 💚 Evaluate options proportionately - compare viable technologies and processes against explicit criteria, and prototype the riskiest assumptions before committing.
 - 💚 Give developers autonomy - architects tend to check how developers implement their design, don't do that. Give developers enough autonomy for their creativity and self-expression.
 - 💚 Repetitive tasks slow you down - avoid them. As soon as you spot a repetitive task in development, automate it.
 - 💚 Record your decisions. When you make decisions in system design, record their rationale. For example, to defend them later to the business.
