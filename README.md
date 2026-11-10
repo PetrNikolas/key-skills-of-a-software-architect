@@ -13,9 +13,8 @@
 - 💚 Requirements always take precedence over your resume - don't use a new technology on a project just so you can add it to your CV.
 - 💚 Manage essential complexity and minimize accidental complexity - Essential complexity comes from the problem itself; accidental complexity comes from avoidable design and implementation choices.
 - 💚 Your biggest problem is not technical - the biggest problem is the people who work on and build the project. You need to pick the right people and prepare the right environment for them to work in.
-- 💚 Application architecture determines its performance. As good as the application's architecture is, that's how high its performance is. Performance is foundational - everything revolves around it.
+- 💚 Architecture sets the performance ceiling - structural choices such as data access patterns, network round trips, and synchronization limit what later code tuning can achieve, so test performance-critical paths early and weigh performance against the other quality attributes.
 - 💚 There is no universal solution for everything - every project is designed from scratch and there is no solution that can always be copied 1:1.
-- 💚 It's never too early to start thinking about performance - start testing the application's performance as early as possible, already during development.
 - 💚 Business dictates the direction - there's no point fighting it. The direction of the product/project is always determined by the business (and whoever pays). This needs to be accepted as a fact.
 - 💚 Continuously test CI/CD. Don't leave the CI/CD process until the end, but build it from the very start of product/application development.
 - 💚 It's all about trade-offs - every architecture will have some trade-offs (quality vs cost vs time). It will never be 100% perfect.
